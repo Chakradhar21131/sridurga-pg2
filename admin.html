@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin – Sri Durga PG</title>
+  <style>
+    body{font-family:Arial,sans-serif;margin:0;background:#f7f7f7}
+    header{background:#0f766e;color:#fff;padding:16px;text-align:center}
+    .wrap{max-width:900px;margin:18px auto;padding:0 14px}
+    .card{background:#fff;border-radius:12px;padding:16px;border:1px solid #e2e8f0}
+    .btn{background:#0f766e;color:#fff;padding:10px 14px;border-radius:10px;border:0;cursor:pointer}
+    input{padding:10px;width:100%;max-width:280px}
+    a{color:#0f766e;text-decoration:none;font-weight:bold}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  </style>
+</head>
+<body>
+<header>
+  <h2>Admin Panel – SRI DURGA PG FOR GENTS</h2>
+</header>
+
+<div class="wrap">
+  <div class="card" id="lockBox">
+    <h3>Enter PIN</h3>
+    <p>Owner-only access.</p>
+    <input id="pin" type="password" placeholder="Enter 4-digit PIN" />
+    <button class="btn" onclick="unlock()">Unlock</button>
+    <p style="color:#64748b;font-size:13px;margin-top:10px">
+      Tip: Change PIN inside this file (search for ADMIN_PIN).
+    </p>
+  </div>
+
+  <div class="card" id="adminBox" style="display:none">
+    <h3>Quick Actions</h3>
+    <div class="grid">
+      <div class="card">
+        <h4>Rent Reminders</h4>
+        <p>Open your rent reminder Excel and send WhatsApp reminders.</p>
+        <a href="./PG_Rent_WhatsApp_Automation_FINAL.xlsx" download>Download Rent Automation Excel</a>
+      </div>
+
+      <div class="card">
+        <h4>Vacancies</h4>
+        <p>Room-wise vacancies tracker.</p>
+        <a href="./PG_Room_Wise_Vacancies_By_Floor.xlsx" download>Download Vacancies Sheet</a>
+      </div>
+
+      <div class="card">
+        <h4>Tenant Master</h4>
+        <p>All tenant records.</p>
+        <a href="./PG_Tenant_Master.xlsx" download>Download Tenant Master</a>
+      </div>
+
+      <div class="card">
+        <h4>Receipts</h4>
+        <p>Print rent receipt PDF.</p>
+        <a href="./PG_Rent_Receipt.pdf" target="_blank">Open Rent Receipt PDF</a>
+      </div>
+    </div>
+
+    <p style="margin-top:14px;color:#64748b;font-size:13px">
+      Note: Keep these files in same GitHub repo root (same folder as index.html).
+    </p>
+  </div>
+</div>
+
+<script>
+  const ADMIN_PIN = "2580"; // ✅ CHANGE THIS PIN
+  function unlock(){
+    const p = document.getElementById("pin").value || "";
+    if(p === ADMIN_PIN){
+      document.getElementById("lockBox").style.display = "none";
+      document.getElementById("adminBox").style.display = "block";
+    } else {
+      alert("Wrong PIN");
+    }
+  }
+</script>
+</body>
+</html>

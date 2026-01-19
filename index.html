@@ -8,13 +8,14 @@
     body { font-family: Arial, sans-serif; margin:0; background:#f7f7f7; }
     header { background:#0f766e; color:#fff; padding:20px; text-align:center; }
     nav { background:#134e4a; padding:10px; text-align:center; }
-    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; }
+    nav a { color:#fff; margin:0 10px; text-decoration:none; font-weight:bold; display:inline-block; padding:6px 8px; }
     section { padding:30px; background:#fff; margin:20px; border-radius:10px; }
     h2 { color:#0f766e; }
     .cards { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; }
     .card { background:#ecfeff; padding:20px; border-radius:10px; }
     footer { background:#0f766e; color:#fff; text-align:center; padding:15px; }
-    .btn { background:#0f766e; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; display:inline-block; }
+    .btn { background:#0f766e; color:#fff; padding:10px 16px; border-radius:8px; text-decoration:none; display:inline-block; border:0; cursor:pointer; }
+    input, select { box-sizing:border-box; }
   </style>
 </head>
 <body>
@@ -35,7 +36,11 @@
 
 <section id="about">
   <h2>About Our PG | ನಮ್ಮ ಪಿಜಿ ಬಗ್ಗೆ</h2>
-  <p>We provide safe, clean and affordable PG accommodation with food, WiFi and all basic facilities. Ideal for students and working professionals.<br/>ನಾವು ಆಹಾರ, ವೈಫೈ ಮತ್ತು ಎಲ್ಲಾ ಮೂಲ ಸೌಲಭ್ಯಗಳೊಂದಿಗೆ ಸುರಕ್ಷಿತ, ಸ್ವಚ್ಛ ಮತ್ತು ಕೈಗೆಟುಕುವ ಪಿಜಿ ವಸತಿಯನ್ನು ಒದಗಿಸುತ್ತೇವೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಉದ್ಯೋಗಿಗಳಿಗೆ ಸೂಕ್ತ.</p>
+  <p>
+    We provide safe, clean and affordable PG accommodation with food, WiFi and all basic facilities. Ideal for students and working professionals.
+    <br/>
+    ನಾವು ಆಹಾರ, ವೈಫೈ ಮತ್ತು ಎಲ್ಲಾ ಮೂಲ ಸೌಲಭ್ಯಗಳೊಂದಿಗೆ ಸುರಕ್ಷಿತ, ಸ್ವಚ್ಛ ಮತ್ತು ಕೈಗೆಟುಕುವ ಪಿಜಿ ವಸತಿಯನ್ನು ಒದಗಿಸುತ್ತೇವೆ. ವಿದ್ಯಾರ್ಥಿಗಳು ಮತ್ತು ಉದ್ಯೋಗಿಗಳಿಗೆ ಸೂಕ್ತ.
+  </p>
 </section>
 
 <section id="rooms">
@@ -48,11 +53,13 @@
   </div>
 </section>
 
-
-
 <section id="location">
   <h2>Location | ಸ್ಥಳ</h2>
-  <p><b>Address:</b> HENNAGARA MAIN ROAD, KITHAGANAHALLI, ANEKAL TALUK, BENGALURU, 560099<br/><b>ವಿಳಾಸ:</b> ಹೆನ್ನಾಗರ ಮುಖ್ಯ ರಸ್ತೆ, ಕಿತಗಾನಹಳ್ಳಿ, ಅನೇಕಲ್ ತಾಲ್ಲೂಕು, ಬೆಂಗಳೂರು, 560099</p>
+  <p>
+    <b>Address:</b> HENNAGARA MAIN ROAD, KITHAGANAHALLI, ANEKAL TALUK, BENGALURU, 560099
+    <br/>
+    <b>ವಿಳಾಸ:</b> ಹೆನ್ನಾಗರ ಮುಖ್ಯ ರಸ್ತೆ, ಕಿತಗಾನಹಳ್ಳಿ, ಅನೇಕಲ್ ತಾಲ್ಲೂಕು, ಬೆಂಗಳೂರು, 560099
+  </p>
   <div class="card" style="background:#fff; border:1px solid #e2e8f0; padding:10px;">
     <iframe title="Google Map" style="width:100%; height:320px; border:0; border-radius:10px;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
       src="https://maps.google.com/maps?q=HENNAGARA%20MAIN%20ROAD%2C%20KITHAGANAHALLI%2C%20ANEKAL%20TALUK%2C%20BENGALURU%20560099&output=embed">
@@ -75,24 +82,38 @@
 
 <section id="contact">
   <h2>Contact Us | ಸಂಪರ್ಕಿಸಿ</h2>
-  <p><b>Address:</b> HENNAGARA MAIN ROAD, KITHAGANAHALLI, ANEKAL TALUK, BENGALURU, 560099<br/><b>ವಿಳಾಸ:</b> ಹೆನ್ನಾಗರ ಮುಖ್ಯ ರಸ್ತೆ, ಕಿತಗಾನಹಳ್ಳಿ, ಅನೇಕಲ್ ತಾಲ್ಲೂಕು, ಬೆಂಗಳೂರು, 560099</p>
-  <p><b>Phone:</b> 8341161664</p>
-  <a class="btn" href="https://wa.me/918341161664">WhatsApp Now</a>
+  <p>
+    <b>Address:</b> HENNAGARA MAIN ROAD, KITHAGANAHALLI, ANEKAL TALUK, BENGALURU, 560099
+    <br/>
+    <b>ವಿಳಾಸ:</b> ಹೆನ್ನಾಗರ ಮುಖ್ಯ ರಸ್ತೆ, ಕಿತಗಾನಹಳ್ಳಿ, ಅನೇಕಲ್ ತಾಲ್ಲೂಕು, ಬೆಂಗಳೂರು, 560099
+  </p>
+  <p><b>Phone:</b> 8106279192</p>
+  <a class="btn" href="https://wa.me/918106279192">WhatsApp Now</a>
 </section>
 
 <section id="register">
   <h2>New Tenant Registration & Payment | ಹೊಸ ಬಾಡಿಗೆದಾರರ ನೋಂದಣಿ ಮತ್ತು ಪಾವತಿ</h2>
-  <p>Fill the form below. After submitting, you can continue to payment (UPI) and also send details to WhatsApp.</p>
-  <p>ಕೆಳಗಿನ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ. Submit ಮಾಡಿದ ನಂತರ UPI ಪಾವತಿಗೆ ಮುಂದುವರಿಯಬಹುದು ಮತ್ತು ವಿವರಗಳನ್ನು WhatsApp ಮೂಲಕ ಕೂಡ ಕಳುಹಿಸಬಹುದು.</p>
+  <p>Fill the form below. After submitting, you can continue to Razorpay payment and also send details to WhatsApp.</p>
+  <p>ಕೆಳಗಿನ ಫಾರ್ಮ್ ಭರ್ತಿ ಮಾಡಿ. Submit ಮಾಡಿದ ನಂತರ Razorpay ಪಾವತಿಗೆ ಮುಂದುವರಿಯಬಹುದು ಮತ್ತು ವಿವರಗಳನ್ನು WhatsApp ಮೂಲಕ ಕೂಡ ಕಳುಹಿಸಬಹುದು.</p>
 
   <div class="card" style="background:#fff; border:1px solid #dbeafe;">
     <form id="tenantForm">
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:14px;">
-        <label>Full Name / ಹೆಸರು<br/><input required name="name" style="width:100%; padding:10px;" placeholder="Enter full name"/></label>
-        <label>Mobile / ಮೊಬೈಲ್<br/><input required name="mobile" pattern="[0-9]{10}" style="width:100%; padding:10px;" placeholder="10-digit mobile"/></label>
-        <label>Room No / ರೂಮ್ ಸಂಖ್ಯೆ<br/><input name="room" style="width:100%; padding:10px;" placeholder="e.g., 101"/></label>
-        <label>Bed No / ಬೆಡ್ ಸಂಖ್ಯೆ<br/><input name="bed" style="width:100%; padding:10px;" placeholder="e.g., B2"/></label>
-        <label>Join Date / ಸೇರುವ ದಿನಾಂಕ<br/><input name="joindate" type="date" style="width:100%; padding:10px;"/></label>
+        <label>Full Name / ಹೆಸರು<br/>
+          <input required name="name" style="width:100%; padding:10px;" placeholder="Enter full name"/>
+        </label>
+        <label>Mobile / ಮೊಬೈಲ್<br/>
+          <input required name="mobile" pattern="[0-9]{10}" style="width:100%; padding:10px;" placeholder="10-digit mobile"/>
+        </label>
+        <label>Room No / ರೂಮ್ ಸಂಖ್ಯೆ<br/>
+          <input name="room" style="width:100%; padding:10px;" placeholder="e.g., 101"/>
+        </label>
+        <label>Bed No / ಬೆಡ್ ಸಂಖ್ಯೆ<br/>
+          <input name="bed" style="width:100%; padding:10px;" placeholder="e.g., B2"/>
+        </label>
+        <label>Join Date / ಸೇರುವ ದಿನಾಂಕ<br/>
+          <input name="joindate" type="date" style="width:100%; padding:10px;"/>
+        </label>
         <label>ID Proof Type / ಗುರುತಿನ ದಾಖಲೆ<br/>
           <select name="idtype" style="width:100%; padding:10px;">
             <option value="Aadhaar">Aadhaar</option>
@@ -101,7 +122,9 @@
             <option value="Other">Other</option>
           </select>
         </label>
-        <label>ID Number / ದಾಖಲೆ ಸಂಖ್ಯೆ<br/><input name="idno" style="width:100%; padding:10px;" placeholder="Enter ID number"/></label>
+        <label>ID Number / ದಾಖಲೆ ಸಂಖ್ಯೆ<br/>
+          <input name="idno" style="width:100%; padding:10px;" placeholder="Enter ID number"/>
+        </label>
         <label>Room Sharing / ರೂಮ್ ಶೇರಿಂಗ್<br/>
           <select required name="sharing" id="sharing" style="width:100%; padding:10px;">
             <option value="" selected disabled>Select sharing</option>
@@ -121,9 +144,12 @@
         <button type="button" id="tenantConfirmBtn" class="btn" style="background:#7c3aed;">Send Confirmation to Tenant</button>
         <a id="upiBtn" class="btn" style="background:#0ea5e9;" href="#">Pay via UPI</a>
       </div>
-      <p style="margin-top:10px; font-size:14px; color:#475569;">✅ <b>Auto Save to Google Sheet</b> is enabled (free). After you fill & submit, details will be saved to your sheet.</p>
 
-      <p style="margin-top:12px; font-size:14px;">Payment UPI ID: <b id="upiIdText">8341161664-5@YBL</b> | Scan QR from WhatsApp / ask management if needed.</p>
+      <p style="margin-top:10px; font-size:14px; color:#475569;">
+        Google Sheet auto-save is <b>optional</b>. If you want it, tell me your Apps Script WebApp URL and I will add it.
+      </p>
+
+      <p style="margin-top:12px; font-size:14px;">Payment UPI ID: <b id="upiIdText">8341161664-5@YBL</b></p>
     </form>
 
     <div id="result" style="margin-top:14px; padding:12px; border-radius:10px; background:#f0fdf4; display:none;"></div>
@@ -134,179 +160,196 @@
   <p>© 2026 SRI DURGA PG FOR GENTS. All rights reserved.</p>
 </footer>
 
-  <script>
-    // ✅ Configure here
-    const PG_NAME = "SRI DURGA PG FOR GENTS";
-    // ✅ Google Sheet (FREE) — Paste your Google Apps Script Web App URL here
-    // Example: https://script.google.com/macros/s/XXXX/exec
-    const SHEET_WEBAPP_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEBAPP_URL_HERE";
-    const MANAGER_WA = "918106279192"; // WhatsApp number
-    const UPI_ID = "8341161664-5@YBL";
-    
-    // ✅ Razorpay Payment Links (create 3 links in Razorpay Dashboard → Payment Links)
-    // Paste your real links below
-    const RAZORPAY_LINK_2 = "https://rzp.io/rzp/ihCJ8uT"; // ₹6500
-    const RAZORPAY_LINK_4 = "https://rzp.io/rzp/j4e8XcVk"; // ₹4500
-    const RAZORPAY_LINK_6 = "https://rzp.io/rzp/j4e8XcVk"; // ₹4500
-    const UPI_PN = encodeURIComponent("SRI DURGA PG FOR GENTS");
+<script>
+  // ✅ Configure here
+  const PG_NAME = "SRI DURGA PG FOR GENTS";
+  const MANAGER_WA = "918106279192"; // WhatsApp number
+  const UPI_ID = "8341161664-5@YBL";
+  const UPI_PN = encodeURIComponent("SRI DURGA PG FOR GENTS");
 
-    function buildMessage(data){
-      return `*${PG_NAME}*%0A`+
-        `New Tenant Details:%0A`+
-        `Name: ${encodeURIComponent(data.name)}%0A`+
-        `Mobile: ${encodeURIComponent(data.mobile)}%0A`+
-        `Room/Bed: ${encodeURIComponent(data.room||"-")}/${encodeURIComponent(data.bed||"-")}%0A`+
-        `Join Date: ${encodeURIComponent(data.joindate||"-")}%0A`+
-        `ID: ${encodeURIComponent(data.idtype||"-")} - ${encodeURIComponent(data.idno||"-")}%0A`+
-        `Rent Amount: Rs.${encodeURIComponent(data.amount)}%0A%0A`+
-        `Payment UPI: ${encodeURIComponent(UPI_ID)}`;
-    }
+  // ✅ Razorpay Payment Links
+  const RAZORPAY_LINK_2 = "https://rzp.io/rzp/ihCJ8uT"; // ₹6500
+  const RAZORPAY_LINK_4 = "https://rzp.io/rzp/j4e8XcVk"; // ₹4500
+  const RAZORPAY_LINK_6 = "https://rzp.io/rzp/j4e8XcVk"; // ₹4500
 
-    function buildUpiLink(amount){
-      return `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${UPI_PN}&am=${encodeURIComponent(amount)}&cu=INR`;
-    }
+  // ✅ Optional Google Sheet Web App URL (leave empty to disable)
+  // Expected behavior (confirm): Do you want to SAVE registrations to Google Sheet automatically? If YES, paste your Web App URL here.
+  const SHEET_WEBAPP_URL = "";
 
-    function getRazorpayLink(sharing){
-      if(sharing === '2') return RAZORPAY_LINK_2;
-      if(sharing === '4') return RAZORPAY_LINK_4;
-      if(sharing === '6') return RAZORPAY_LINK_6;
-      return "";
-    }&pn=${UPI_PN}&am=${encodeURIComponent(amount)}&cu=INR`;
-    }
+  function getRazorpayLink(sharing){
+    if(sharing === '2') return RAZORPAY_LINK_2;
+    if(sharing === '4') return RAZORPAY_LINK_4;
+    if(sharing === '6') return RAZORPAY_LINK_6;
+    return "";
+  }
 
-    function readForm(){
-      const f = document.getElementById('tenantForm');
-      const fd = new FormData(f);
-      return Object.fromEntries(fd.entries());
-    }
+  function buildUpiLink(amount){
+    return `upi://pay?pa=${encodeURIComponent(UPI_ID)}&pn=${UPI_PN}&am=${encodeURIComponent(amount)}&cu=INR`;
+  }
 
-    const upiBtn = document.getElementById('upiBtn');
-    const tenantConfirmBtn = document.getElementById('tenantConfirmBtn');
-    const waBtn = document.getElementById('waBtn');
-    const upiIdText = document.getElementById('upiIdText');
-    if(upiIdText) upiIdText.textContent = UPI_ID;
+  function readForm(){
+    const f = document.getElementById('tenantForm');
+    const fd = new FormData(f);
+    return Object.fromEntries(fd.entries());
+  }
 
-    function refreshLinks(){
-      const d = readForm();
-      const amount = d.amount || '';
-      upiBtn.href = amount ? buildUpiLink(amount) : '#';
-    }
+  function buildManagerMessage(d){
+    return `*${PG_NAME}*%0A`+
+      `New Tenant Details:%0A`+
+      `Name: ${encodeURIComponent(d.name||'')}%0A`+
+      `Mobile: ${encodeURIComponent(d.mobile||'')}%0A`+
+      `Room/Bed: ${encodeURIComponent(d.room||"-")}/${encodeURIComponent(d.bed||"-")}%0A`+
+      `Join Date: ${encodeURIComponent(d.joindate||"-")}%0A`+
+      `ID: ${encodeURIComponent(d.idtype||"-")} - ${encodeURIComponent(d.idno||"-")}%0A`+
+      `Sharing: ${encodeURIComponent(d.sharing||"-")}%0A`+
+      `Rent Amount: Rs.${encodeURIComponent(d.amount||'')}%0A%0A`+
+      `Payment Link (Razorpay): ${encodeURIComponent(getRazorpayLink(d.sharing)||'')}`;
+  }
 
-    // Auto-fill amount based on sharing selection
-    const sharingEl = document.getElementById('sharing');
-    const amountEl = document.getElementById('amount');
-    if(sharingEl && amountEl){
-      sharingEl.addEventListener('change', () => {
-        const v = sharingEl.value;
-        if(v === '2') amountEl.value = 6500;
-        else if(v === '4') amountEl.value = 4500;
-        else if(v === '6') amountEl.value = 4500;
-        else amountEl.value = '';
-        refreshLinks();
-      });
-    }
+  function buildTenantConfirmation(d){
+    return `*${PG_NAME}*%0A`+
+      `✅ Registration received.%0A`+
+      `Room/Bed: ${encodeURIComponent(d.room||'-')}/${encodeURIComponent(d.bed||'-')}%0A`+
+      `Sharing: ${encodeURIComponent(d.sharing||'-')}%0A`+
+      `Rent: Rs.${encodeURIComponent(d.amount||'')}%0A`+
+      `Payment: Please click Pay Now on website and complete payment.%0A`+
+      `Thank you.`;
+  }
 
-    // Debounce input updates to avoid UI lag on low-end phones
-    let _t;
-    document.getElementById('tenantForm').addEventListener('input', function(){
-      clearTimeout(_t);
-      _t = setTimeout(refreshLinks, 150);
+  // Elements
+  const upiBtn = document.getElementById('upiBtn');
+  const waBtn = document.getElementById('waBtn');
+  const tenantConfirmBtn = document.getElementById('tenantConfirmBtn');
+  const sharingEl = document.getElementById('sharing');
+  const amountEl = document.getElementById('amount');
+  const resultBox = document.getElementById('result');
+  const upiIdText = document.getElementById('upiIdText');
+  if(upiIdText) upiIdText.textContent = UPI_ID;
+
+  function refreshPaymentLinks(){
+    const d = readForm();
+    if(upiBtn) upiBtn.href = d.amount ? buildUpiLink(d.amount) : '#';
+  }
+
+  // Auto-fill amount based on sharing
+  if(sharingEl && amountEl){
+    sharingEl.addEventListener('change', () => {
+      const v = sharingEl.value;
+      if(v === '2') amountEl.value = 6500;
+      else if(v === '4') amountEl.value = 4500;
+      else if(v === '6') amountEl.value = 4500;
+      else amountEl.value = '';
+      refreshPaymentLinks();
     });
+  }
 
-    document.getElementById('tenantForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      const d = readForm();
-
-      // Validate sharing selection
-      if(!d.sharing){
-        alert('Please select room sharing.');
-        return;
-      }
-
-      const r = document.getElementById('result');
-      r.style.display = 'block';
-      r.style.background = '#f0fdf4';
-      r.innerHTML = `✅ Details captured. Redirecting to payment...`;
-
-      // Save to Google Sheet (NON-BLOCKING)
-      if(SHEET_WEBAPP_URL && !SHEET_WEBAPP_URL.includes('PASTE_')){
-        try{
-          fetch(SHEET_WEBAPP_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-              pg: PG_NAME,
-              name: d.name,
-              mobile: d.mobile,
-              room: d.room || '',
-              bed: d.bed || '',
-              joindate: d.joindate || '',
-              idtype: d.idtype || '',
-              idno: d.idno || '',
-              sharing: d.sharing || '',
-              amount: d.amount || '',
-              ts: new Date().toISOString()
-            })
-          }).catch(()=>{});
-        } catch(err) {}
-      }
-
-      // Redirect to Razorpay payment link based on sharing
-      const payLink = getRazorpayLink(d.sharing);
-      if(!payLink || payLink.includes('PASTE_')){
-        alert('Razorpay link not configured yet.');
-        r.innerHTML = `✅ Details captured. Please contact PG management for payment.`;
-        return;
-      }
-
-      // ✅ Show PAY NOW button (browser-safe)
-      r.innerHTML = `
-        ✅ Details captured.<br/><br/>
-        <a href="${payLink}"
-           style="display:inline-block;background:#0ea5e9;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold">
-           PAY NOW (Razorpay)
-        </a>
-      `;
-    });
-          savedOk = res.ok;
-        } catch(err){
-          savedOk = false;
-        }
-      }
-
-      // 2) Show next steps
-      refreshLinks();
-      r.style.background = '#f0fdf4';
-      r.innerHTML = `✅ Details captured${savedOk ? ' and saved to Google Sheet' : ''}.<br/>Next: Click <b>Pay via UPI</b> to continue payment. You can also send details to WhatsApp.`;
-    });
-
+  // Send details to manager
+  if(waBtn){
     waBtn.addEventListener('click', function(){
       const d = readForm();
-      const msg = buildMessage(d);
+      const msg = buildManagerMessage(d);
       const url = `https://wa.me/${MANAGER_WA}?text=${msg}`;
-      window.open(url, '_blank');
+      window.location.href = url; // same-tab
     });
+  }
 
+  // Send confirmation to tenant
+  if(tenantConfirmBtn){
     tenantConfirmBtn.addEventListener('click', function(){
       const d = readForm();
-      const mobile = String(d.mobile || '').trim();
+      const mobile = String(d.mobile||'').trim();
       if(!/^[0-9]{10}$/.test(mobile)){
         alert('Enter tenant 10-digit mobile number first.');
         return;
       }
-      const confirmMsg = `*${PG_NAME}*%0A`+
-        `✅ Registration received.%0A`+
-        `Room/Bed: ${encodeURIComponent(d.room||'-')}/${encodeURIComponent(d.bed||'-')}%0A`+
-        `Sharing: ${encodeURIComponent(d.sharing||'-')}%0A`+
-        `Rent: Rs.${encodeURIComponent(d.amount||'')}%0A`+
-        `Payment: Razorpay link will open after you select sharing and click Continue.%0A`+
-        `Thank you.`;
-      const url = `https://wa.me/91${mobile}?text=${confirmMsg}`;
-      // Use same-tab navigation to avoid popup blockers
-      window.location.href = url;
+      const msg = buildTenantConfirmation(d);
+      window.location.href = `https://wa.me/91${mobile}?text=${msg}`;
+    });
+  }
+
+  // Submit handler: show Pay Now button
+  document.getElementById('tenantForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const d = readForm();
+
+    if(!d.sharing){
+      alert('Please select room sharing.');
+      return;
+    }
+
+    const payLink = getRazorpayLink(d.sharing);
+    if(!payLink){
+      alert('Payment link not available. Please contact PG management.');
+      return;
+    }
+
+    // Optional save to sheet (non-blocking)
+    if(SHEET_WEBAPP_URL){
+      try{
+        fetch(SHEET_WEBAPP_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            pg: PG_NAME,
+            name: d.name,
+            mobile: d.mobile,
+            room: d.room || '',
+            bed: d.bed || '',
+            joindate: d.joindate || '',
+            idtype: d.idtype || '',
+            idno: d.idno || '',
+            sharing: d.sharing || '',
+            amount: d.amount || '',
+            ts: new Date().toISOString()
+          })
+        }).catch(()=>{});
+      } catch(err) {}
+    }
+
+    if(resultBox){
+      resultBox.style.display = 'block';
+      resultBox.style.background = '#f0fdf4';
+      resultBox.innerHTML = `✅ Details captured.<br/><br/>
+        <a href="${payLink}" target="_self"
+           style="display:inline-block;background:#0ea5e9;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold">
+           PAY NOW (Razorpay)
+        </a>
+        <div style="margin-top:10px; font-size:13px; color:#475569;">If Razorpay doesn't open, open this page in Chrome.</div>`;
+      resultBox.scrollIntoView({behavior:'smooth', block:'start'});
+    }
+
+    refreshPaymentLinks();
+  });
+
+  // ---------- Self-tests (basic) ----------
+  function runSelfTests(){
+    const errors = [];
+
+    // Test 1: Razorpay link mapping
+    if(getRazorpayLink('2') !== RAZORPAY_LINK_2) errors.push('Razorpay mapping for 2-sharing is wrong');
+    if(getRazorpayLink('4') !== RAZORPAY_LINK_4) errors.push('Razorpay mapping for 4-sharing is wrong');
+    if(getRazorpayLink('6') !== RAZORPAY_LINK_6) errors.push('Razorpay mapping for 6-sharing is wrong');
+
+    // Test 2: UPI link builder
+    const u = buildUpiLink(4500);
+    if(!u.startsWith('upi://pay?pa=')) errors.push('UPI link does not start with upi://pay');
+    if(!u.includes('am=4500')) errors.push('UPI link missing amount');
+
+    // Test 3: Required DOM elements
+    ['tenantForm','sharing','amount','result','waBtn','tenantConfirmBtn','upiBtn'].forEach(id => {
+      if(!document.getElementById(id)) errors.push(`Missing element: #${id}`);
     });
 
-    refreshLinks();
-  </script>
+    if(errors.length){
+      console.warn('Self-tests failed:', errors);
+    } else {
+      console.log('Self-tests passed ✅');
+    }
+  }
+
+  refreshPaymentLinks();
+  runSelfTests();
+</script>
+
 </body>
 </html>

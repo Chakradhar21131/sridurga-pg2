@@ -254,15 +254,19 @@
       // Redirect to Razorpay payment link based on sharing
       const payLink = getRazorpayLink(d.sharing);
       if(!payLink || payLink.includes('PASTE_')){
-        alert('Razorpay link not configured yet. Please paste Razorpay payment links in the code.');
+        alert('Razorpay link not configured yet.');
         r.innerHTML = `✅ Details captured. Please contact PG management for payment.`;
         return;
       }
 
-      // Small delay for UX
-      setTimeout(() => {
-        window.location.href = payLink;
-      }, 400);
+      // ✅ Show PAY NOW button (browser-safe)
+      r.innerHTML = `
+        ✅ Details captured.<br/><br/>
+        <a href="${payLink}"
+           style="display:inline-block;background:#0ea5e9;color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold">
+           PAY NOW (Razorpay)
+        </a>
+      `;
     });
           savedOk = res.ok;
         } catch(err){
